@@ -5,20 +5,20 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack serve --open --mode development"
+    "start": "webpack-dev-server --open --mode development"
   },
   "keywords": [
     "javascript"
   ],
-  "author": "Thomas Bernal <thhomasgt99@gmail.com>",
+  "author": "Oscar Barajas <oscar@platzi.com>",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.14.0",
-    "babel-loader": "^8.2.2",
-    "copy-webpack-plugin": "^8.1.1",
-    "html-webpack-plugin": "^5.3.1",
-    "webpack": "^5.37.0",
-    "webpack-cli": "^4.7.0",
-    "webpack-dev-server": "^3.11.2"
+    "@babel/core": "^7.7.5",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
   }
 }

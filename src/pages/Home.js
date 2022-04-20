@@ -1,21 +1,20 @@
-import getData from '../utils/getData.js'
+import getData from '../utils/getData';
 
-const Home = async () =>{
-    const Characters = await getData();
-    const view = `
-        <div class="Characters">
-            ${Characters.results.map(chararter => `
-            <article class="Character-item">
-              <a href="#/${chararter.id}">
-                <img src="${chararter.image}" alt="${chararter.name}">
-                <h2>${chararter.name}</h2>
-              </a>
-            </article>
-            `).join('')}
-        </div>
-    `;
-    return view
-}
-
+const Home = async () => {
+  const characters = await getData();
+  const view = `
+    <div class="Characters">
+      ${characters.results.map(character => `
+        <article class="Character-item">
+          <a href="#/${character.id}/">
+            <img src="${character.image}" alt="${character.name}">
+            <h2>${character.name}</h2>
+          </a>
+        </article>
+      `).join('')}
+    </div>
+  `;
+  return view;
+};
 
 export default Home;

@@ -8,6 +8,7 @@
 1. start : start arranca el proyecto con un servidor local en desarrollo.
 2. build : build crea el compilado de produccion.
 ### DevDependencies
+###### ♦*Cambiar algunas versiones de los paquetes definitivamente causar conflictos*
 + webpack : webpack
 + webpack-cli : 
 + webpack-dev-server : servidor de desarrollo.

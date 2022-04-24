@@ -14,5 +14,5 @@
 + webpack-dev-server : servidor de desarrollo.
 + copy-webpack-plugin : mueve los archivos de estilos en el momento de hacer la compilacion de produccion a la carpeta dist.
 + html-webpack-plugin : mueve los arvhivos de html en el momento de hacer la compilacion de produccion a la carpeta dist.
-+ @babel/core : No utilizada.
-+ babel-loader : No utilizada.
++ @babel/core : No utilizada hasta el momento.
++ babel-loader : No utilizada hasta el momento.

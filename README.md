@@ -17,3 +17,5 @@
 + html-webpack-plugin : mueve los arvhivos de html en el momento de hacer la compilacion de produccion a la carpeta dist.
 + @babel/core : No utilizada hasta el momento.
 + babel-loader : No utilizada hasta el momento.
+
+##### Nota: para mandar los cambios a github pages nececitaremos corres el commando npm run deploy esto ejecutara  tambiel el camando predeploy que por ser 'pre' se ejecuta promero por defecto, estos dos compilan dist en el github, una vez ejecutado esto habra preparado la carpeta build o dist para enviarla a github con las comfiguraciones internas necesarias para que github entienda como tratar la informacion y donde ponerla.

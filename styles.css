@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: rgb(43, 46, 47);
+  font-family: 'Open Sans', sans-serif;
+  background-color: #121c21;
+}
+header {
+  height: 7rem;
+  background-color: #0d171c;
+}
+header a {
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+header .Header-nav {
+  font-size: 2rem;
+}
+header .Header-main {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Header a {
+  text-decoration: none;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#content {
+  width: 100%;
+  max-width: 1100px;
+  background-color: #1e272c;
+}
+.Characters {
+  width: 100%;
+  display: grid;
+  grid-gap: 1.5rem;
+}
+.Character-item {
+
+}
+.Character-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+}
+.Character-item img {
+  width: 20rem;
+}
+.Character-item h2 {
+  text-align: center;
+  color: white;
+  margin-top: 0.5rem;
+  font-size: 1.7rem;
+}
+.Characters-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Characters-card {
+  text-decoration: none;
+  margin: 0 0 20px 0;
+  display: block;
+  animation-duration: 2s;
+  animation-name: fade;
+  color: #ffffff;
+}
+.information {
+  width: 30rem;
+}
+.information h3 {
+  margin-top: 1rem;
+  font-size: 18px;
+  font-weight: 400;
+}
+.Characters-item img {
+  width: 50%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+@media (min-width: 400px) {
+  .Characters {
+    grid-template-columns: repeat(2 , 1fr );
+    padding: 0 2rem 0 2rem;
+  }
+  .Character-item img {
+    width: 17rem;
+  }
+}
+@media (min-width: 750px) {
+  .Characters {
+    grid-template-columns: repeat(3 , 1fr );
+  }
+  .Character-item img {
+    width: 20rem;
+  }
+  .Characters-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .Characters-card h2{
+    margin-top: 1rem;
+    font-size: 2.3rem;
+  }
+  .information {
+    margin-left: 5rem;
+  }
+  .information h3 {
+    font-size: 2.1rem;
+  }
+}
+@media (min-width: 1000px) {
+  .Characters {
+    grid-template-columns: repeat(4 , 1fr );
+  }
+  .Characters-inner {
+    margin-top: 5rem;
+    justify-content: space-evenly;
+    padding: 0 5rem 0 5rem;
+  }
+  .Characters-card h2{
+    margin-top: 1rem;
+    font-size: 2.5rem;
+  }
+  .information {
+    margin: 0;
+    padding-bottom: 10rem;
+  }
+}
